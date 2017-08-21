@@ -1,0 +1,1 @@
+FSM creation in java https://sourcemaking.com/design_patterns/state/java/5

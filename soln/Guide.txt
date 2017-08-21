@@ -1,0 +1,35 @@
+Create class that contains the order of the headers and data, as well as which rdt to utilize
+can this class be reused between the client and server?
+
+deliberately alter the data to be sent when testing which version is more reliable
+
+therefore include a way of testing which packets were not sent properly and needed to be resent
+(the server will output the errors encountered, while as the client displays data)
+
+server delivers data from a queue (utilize string for testing, look into outputting and sending audio, video, string)
+
+look into creating a "connection" between client and server in the fashion of TCP (look at the difference)
+    allows for queueing data that could not be sent because previous data needed to be resent
+    
+since each "connection" with a client must have its own reliability checks, because different packets may be sent or not, a list of all clients connected must be created
+
+the client replies 
+
+the initial message sent from the client to the server receives its ip address and port number.
+the client then sends data where the client replies with acknowledgements
+
+how to seperate the reliability features
+    by the book:
+        rdt: 1.0 - A protocol for a completely reliable channel
+        rdt: 2.0 - A protocol for a channel with bit errors
+        rdt: 2.1 - A protocol for retransmission check
+        rdt: 2.2 - Reliable Data Transfer over a Lossy Channel with Bit Errors
+        
+        is future levels built on previous levels? 
+        
+general java notes:
+
+comparable interface:
+    3rd response http://stackoverflow.com/questions/2784514/sort-arraylist-of-custom-objects-by-property
+    
+    consider keeping list in order
